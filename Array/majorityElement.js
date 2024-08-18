@@ -1,18 +1,23 @@
-function majorityElement(nums: number[]): number {
-    
-    let count1 = 0;
-    let count2 = 0;
-    let first = nums[0];
-    let second = 0;
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var majorityElement = function(nums) {
+    let count = 0;
+    let majority = 0;
 
-    for(let n of nums){
-        if(n == first){
-            count1++;
+    for(n of nums){
+        if(count == 0){
+            majority = n;
+            count++;
         }else{
-            count2++;
-            second = n;
-        }
+            if(n == majority){
+                count++;
+            }else{
+                count--;
+            }
+        }    
     }
 
-    return (count1>count2)? first : second;
+    return majority;
 };
