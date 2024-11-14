@@ -22,7 +22,7 @@ const dogsJulia = [3, 5, 2, 12, 7];
 const dogsKate = [4, 1, 15, 8, 3];
 
 const checkDogs = function (dogsJulia, dogsKate) {
-  const newJulia = dogsJulia.splice(1, 3);
+  const newJulia = dogsJulia.splice(1, 2);
   const allDogs = newJulia.concat(dogsKate);
   console.log(allDogs);
 
