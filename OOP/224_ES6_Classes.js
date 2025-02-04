@@ -1,4 +1,4 @@
-//224_ES6_Classes
+///224_ES6_Classes
 
 //class expression
 // const PersonCl = class {};
