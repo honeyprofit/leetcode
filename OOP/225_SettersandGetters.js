@@ -7,6 +7,7 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
+  //Instance Method
   //Method will be added to prototype property
   calcAge() {
     console.log(2037 - this.birthYear);
@@ -30,6 +31,12 @@ class PersonCl {
 
   get fullName() {
     return this._fullName;
+  }
+
+  // Static method
+  static hey() {
+    console.log('Hey there!');
+    console.log(this);
   }
 }
 
@@ -73,3 +80,5 @@ console.log(account.latest); //300
 //setter
 account.latest = 50;
 console.log(account.movements); //[200, 520, 120, 300, 50]
+
+PersonCl.hey();
