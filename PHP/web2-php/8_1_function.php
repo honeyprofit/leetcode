@@ -19,7 +19,7 @@
       ?>
       <h2>nl2br</h2>
       <?php
-     echo nl2br($str);
+     echo nl2br($str); //https://www.php.net/manual/en/function.nl2br.php
        ?>
   </body>
 </html>
