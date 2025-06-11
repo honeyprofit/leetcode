@@ -12,8 +12,8 @@
 
 
 <?php
-echo "<p>title :".&_GET['title']."</P>";
-echo "<p>description :".&_GET['description']."</P>";
+// echo "<p>title :".&_GET['title']."</P>";
+// echo "<p>description :".&_GET['description']."</P>";
 
 file_put_contents('data/'.$_POST['title'], $_POST['description']);
 ?>
